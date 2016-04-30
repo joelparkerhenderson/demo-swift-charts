@@ -11,6 +11,8 @@ To learn more about iOS Charts and MPAndriod Charts, see the official sites:
   * [iOS Charts](https://github.com/danielgindi/ios-charts) by [Daniel Gindi](https://github.com/danielgindi) 
   * [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) by [Phil Jahoda](https://github.com/PhilJay)
 
+If you like iOS Charts and MPAndroid Charts, please consider making a donation to the authors. 
+
 ## How to create this app
 
 1. Create a project.

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D4804501CD4052A00A8AB3C"
+               BlueprintIdentifier = "5D48048F1CD44CEC00A8AB3C"
                BuildableName = "Demo Swift Charts.app"
                BlueprintName = "Demo Swift Charts"
                ReferencedContainer = "container:Demo Swift Charts.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D4804671CD4052A00A8AB3C"
+               BlueprintIdentifier = "5D4804A61CD44CEC00A8AB3C"
                BuildableName = "Demo Swift ChartsTests.xctest"
                BlueprintName = "Demo Swift ChartsTests"
                ReferencedContainer = "container:Demo Swift Charts.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D4804721CD4052A00A8AB3C"
+               BlueprintIdentifier = "5D4804B11CD44CEC00A8AB3C"
                BuildableName = "Demo Swift ChartsUITests.xctest"
                BlueprintName = "Demo Swift ChartsUITests"
                ReferencedContainer = "container:Demo Swift Charts.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D4804501CD4052A00A8AB3C"
+            BlueprintIdentifier = "5D48048F1CD44CEC00A8AB3C"
             BuildableName = "Demo Swift Charts.app"
             BlueprintName = "Demo Swift Charts"
             ReferencedContainer = "container:Demo Swift Charts.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D4804501CD4052A00A8AB3C"
+            BlueprintIdentifier = "5D48048F1CD44CEC00A8AB3C"
             BuildableName = "Demo Swift Charts.app"
             BlueprintName = "Demo Swift Charts"
             ReferencedContainer = "container:Demo Swift Charts.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D4804501CD4052A00A8AB3C"
+            BlueprintIdentifier = "5D48048F1CD44CEC00A8AB3C"
             BuildableName = "Demo Swift Charts.app"
             BlueprintName = "Demo Swift Charts"
             ReferencedContainer = "container:Demo Swift Charts.xcodeproj">

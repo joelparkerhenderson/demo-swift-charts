@@ -15,6 +15,8 @@
 		5D4804A11CD44CEC00A8AB3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D48049F1CD44CEC00A8AB3C /* LaunchScreen.storyboard */; };
 		5D4804AC1CD44CEC00A8AB3C /* Demo_Swift_ChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4804AB1CD44CEC00A8AB3C /* Demo_Swift_ChartsTests.swift */; };
 		5D4804B71CD44CEC00A8AB3C /* Demo_Swift_ChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4804B61CD44CEC00A8AB3C /* Demo_Swift_ChartsUITests.swift */; };
+		5D4804C51CD44FD500A8AB3C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D4804C41CD44FD500A8AB3C /* Cartfile */; };
+		5D4804CA1CD4557200A8AB3C /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4804C91CD4557200A8AB3C /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5D4804B21CD44CEC00A8AB3C /* Demo Swift ChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Demo Swift ChartsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4804B61CD44CEC00A8AB3C /* Demo_Swift_ChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo_Swift_ChartsUITests.swift; sourceTree = "<group>"; };
 		5D4804B81CD44CEC00A8AB3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D4804C41CD44FD500A8AB3C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		5D4804C91CD4557200A8AB3C /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4804CA1CD4557200A8AB3C /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,8 @@
 		5D4804871CD44CEC00A8AB3C = {
 			isa = PBXGroup;
 			children = (
+				5D4804C91CD4557200A8AB3C /* Charts.framework */,
+				5D4804C41CD44FD500A8AB3C /* Cartfile */,
 				5D4804921CD44CEC00A8AB3C /* Demo Swift Charts */,
 				5D4804AA1CD44CEC00A8AB3C /* Demo Swift ChartsTests */,
 				5D4804B51CD44CEC00A8AB3C /* Demo Swift ChartsUITests */,
@@ -138,6 +145,7 @@
 				5D48048C1CD44CEC00A8AB3C /* Sources */,
 				5D48048D1CD44CEC00A8AB3C /* Frameworks */,
 				5D48048E1CD44CEC00A8AB3C /* Resources */,
+				5D4804C61CD4500C00A8AB3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -155,6 +163,7 @@
 				5D4804A31CD44CEC00A8AB3C /* Sources */,
 				5D4804A41CD44CEC00A8AB3C /* Frameworks */,
 				5D4804A51CD44CEC00A8AB3C /* Resources */,
+				5D4804C71CD4501800A8AB3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -173,6 +182,7 @@
 				5D4804AE1CD44CEC00A8AB3C /* Sources */,
 				5D4804AF1CD44CEC00A8AB3C /* Frameworks */,
 				5D4804B01CD44CEC00A8AB3C /* Resources */,
+				5D4804C81CD4502200A8AB3C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -234,6 +244,7 @@
 			files = (
 				5D4804A11CD44CEC00A8AB3C /* LaunchScreen.storyboard in Resources */,
 				5D48049E1CD44CEC00A8AB3C /* Assets.xcassets in Resources */,
+				5D4804C51CD44FD500A8AB3C /* Cartfile in Resources */,
 				5D4804991CD44CEC00A8AB3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +264,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D4804C61CD4500C00A8AB3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		5D4804C71CD4501800A8AB3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		5D4804C81CD4502200A8AB3C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D48048C1CD44CEC00A8AB3C /* Sources */ = {
@@ -405,6 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Demo Swift Charts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joelparkerhenderson.Demo-Swift-Charts";
@@ -416,6 +476,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Demo Swift Charts/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.joelparkerhenderson.Demo-Swift-Charts";

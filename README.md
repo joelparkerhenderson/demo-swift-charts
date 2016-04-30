@@ -17,7 +17,7 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
 1. Create a project.
 
-  <ol>
+  <ol type="1">
 	
     <li>Launch Xcode and create a new Xcode project. We call ours "Demo Swift Charts". [Help](doc/setup/create_a_new_xcode_project.md)
 	
@@ -27,7 +27,7 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
 1. Create a view.
 
-  <ol>
+  <ol type="1">
 
     <li>For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
 
@@ -39,7 +39,7 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
 1. Set the class.
 
-  <ol>
+  <ol type="1">
   
     <li>Select the View. 
 
@@ -55,7 +55,7 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
        
 1. Create an outlet.
 
-  <ol>
+  <ol type="1">
 
     <li>For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
 
@@ -89,7 +89,7 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
  
 1. Verify.
 
-  <ol>
+  <ol type="1">
    
     <li>Run the project.
 

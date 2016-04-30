@@ -17,38 +17,38 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
 Create a project:
 
-  1. Launch Xcode and create a new Xcode project. We call ours "Demo Swift Charts". [Help](doc/setup/create_a_new_xcode_project.md)
+  * Launch Xcode and create a new Xcode project. We call ours "Demo Swift Charts". [Help](doc/setup/create_a_new_xcode_project.md)
 	
-  1. Add Charts to the project. We suggest using Cocoapods or Carthage. [Help](doc/setup/add_charts_to_the_project.md)
+  * Add Charts to the project. We suggest using Cocoapods or Carthage. [Help](doc/setup/add_charts_to_the_project.md)
 
 Create a view:
 
-  1. For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
+  * For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
 
-  1. In the right lower list of UI items, drag-and-drop a "View" item onto the storyboard.
+  * In the right lower list of UI items, drag-and-drop a "View" item onto the storyboard.
 
-  1. Add contraints to make the the "View" item as big as you want.
+  * Add contraints to make the the "View" item as big as you want.
 
 Set the class:
 
-  1. Select the View. 
+  * Select the View. 
 
-  1. Go to the Identity Inspector.
+  * Go to the Identity Inspector.
 
-  1. Edit the "Custom Class" area.
+  * Edit the "Custom Class" area.
 
       * Class: BarChartView
       * Module: Charts
     
 Create an outlet:
 
-  1. For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
+  * For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
 
-  1. Open the Assistant Editor and edit `ViewController.swift`. 
+  * Open the Assistant Editor and edit `ViewController.swift`. 
 
-  1. Control-drag the view to the class. This creates the outlet. Name the outlet `demoBarChartView`. 
+  * Control-drag the view to the class. This creates the outlet. Name the outlet `demoBarChartView`. 
 
-  1. At the top of the class, add `import Charts`
+  * At the top of the class, add `import Charts`
 
 The result looks like this:
 	
@@ -74,11 +74,11 @@ class ViewController: UIViewController {
  
 Verify:
 
-  1. Run the project.
+  * Run the project.
 
-  1. You should see the text “No chart data available”.
+  * You should see the text “No chart data available”.
  
-  1. If you don't see the text, then look in Xcode for any error messages, and also verify that you set the custom class correctly.
+  * If you don't see the text, then look in Xcode for any error messages, and also verify that you set the custom class correctly.
   
 ## Tracking
 

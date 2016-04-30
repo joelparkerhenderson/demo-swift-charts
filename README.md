@@ -15,7 +15,9 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
 ## How to create this app
 
-1. Create a project.
+<ol type="1">
+
+<li>Create a project.
 
   <ol type="1">
 	
@@ -25,7 +27,9 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 	
   </ol>
 
-1. Create a view.
+</li>
+
+<li>Create a view.
 
   <ol type="1">
 
@@ -37,7 +41,9 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
 
   </ol>
 
-1. Set the class.
+</li>
+
+<li>Set the class.
 
   <ol type="1">
   
@@ -52,8 +58,10 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
       </ul>
  
   </ol>
-       
-1. Create an outlet.
+    
+</li>
+   
+<li>Create an outlet.
 
   <ol type="1">
 
@@ -66,28 +74,34 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
     <li>At the top of the class, add `import Charts`
 
   </ol>
+
+</li>
   
-1. The result looks like this.
+<li>The result looks like this.
 	
-		import UIKit
-		import Charts
-		
-		class ViewController: UIViewController {
-		
-		  @IBOutlet weak var demoBarChartView: BarChartView!
+```
+import UIKit
+import Charts
 	
-		  override func viewDidLoad() {
-		    super.viewDidLoad()
-		    demoBarChartView.noDataText = "The chart has no data."
-		  }
-		
-		  override func didReceiveMemoryWarning() {
-		    super.didReceiveMemoryWarning()
-		  }
+class ViewController: UIViewController {
 	
-		}
+  @IBOutlet weak var demoBarChartView: BarChartView!
+	
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    demoBarChartView.noDataText = "The chart has no data."
+  }
+	
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+	
+}
+```
  
-1. Verify.
+</li>
+
+<li>Verify.
 
   <ol type="1">
    
@@ -98,6 +112,10 @@ If you like iOS Charts and MPAndroid Charts, please consider making a donation t
     <li>If you don't see the text, then look in Xcode for any error messages, and also verify that you set the custom class correctly.
   
   </ol>
+
+</li>
+
+</ol>
    
 ## Tracking
 

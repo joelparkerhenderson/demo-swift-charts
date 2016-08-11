@@ -1,5 +1,7 @@
 # Demo Swift Charts
 
+<img src="README.png" alt="Charts" style="width: 100%;"/>
+
 This demonstration shows:
 
   * The [Swift](http://swift.org) programming language with

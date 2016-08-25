@@ -30,6 +30,8 @@ Create a project:
 	
   * Add Charts to the project. We suggest using Cocoapods or Carthage. [Help](doc/setup/add_charts_to_the_project.md)
 
+  * Need help with Carthage? See our repo [demo_swift_carthage](https://github.com/joelparkerhenderson/demo_swift_carthage).
+
 Create a view:
 
   * For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.

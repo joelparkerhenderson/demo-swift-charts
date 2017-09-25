@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,24 +19,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5l-9g-zbn" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lh0-w5-SSS" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="N5l-9g-zbn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2fc-XX-vGy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="N5l-9g-zbn" secondAttribute="trailing" id="FTh-0e-ToI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N5l-9g-zbn" secondAttribute="bottom" id="LWY-bk-dUQ"/>
-                            <constraint firstItem="N5l-9g-zbn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="X2i-mS-KDu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lh0-w5-SSS" secondAttribute="bottom" id="ZqK-EP-Z3Z"/>
+                            <constraint firstItem="lh0-w5-SSS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="agl-UH-MHw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lh0-w5-SSS" secondAttribute="trailing" id="c1O-RJ-7Sw"/>
+                            <constraint firstItem="lh0-w5-SSS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="eu1-fa-pKx"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="demoBarChartView" destination="N5l-9g-zbn" id="Khe-cQ-rLA"/>
+                        <outlet property="demoBarChartView" destination="lh0-w5-SSS" id="JQw-qv-fnu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

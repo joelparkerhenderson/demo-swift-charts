@@ -6,12 +6,12 @@ This demonstration shows:
 
   * The [Swift](http://swift.org) programming language with
     [Apple](http://apple.com)
-    [iOS](http://www.apple.com/ios/)
     [Xcode](https://developer.apple.com/xcode/)
+    [iOS](http://www.apple.com/ios/)
 
   * The [Charts](https://github.com/danielgindi/Charts) library
 
-This README describes how to create the project, if you want to try doing it yourself.
+This README describes how to create the demo.
 
 This work is thanks to the excellent [Appcode iOS charts API tutorial](http://www.appcoda.com/ios-charts-api-tutorial/)
 
@@ -22,17 +22,52 @@ To learn more about iOS Charts and MPAndriod Charts, see the official sites:
 
 If you like iOS Charts and MPAndroid Charts, please consider making a donation to the authors. 
 
-## How to create this app
 
-Create a project:
+## Start
 
-  * Launch Xcode and create a new Xcode project. We call ours "Demo Swift Charts". [Help](doc/setup/create_a_new_xcode_project.md)
+To use this demo, you can clone this repo, or you can use this README to create your own project.
+
+If you clone this repo, then be aware that there are multiple git branches, so pick the one you want.
+
+  * swift-4-xcode-9: Swift version 4, Xcode version 9, iOS version 11.
+
+  * swift-3-xcode-8: Swift version 3, Xcode version 8, iOS version 10.
+
+
+## Create the project
+
+Launch Xcode and create a new Xcode project. 
+
+  * Use iOS template "Single View Application" and Product Name "Demo Swift Charts".
+
+  * [Help](doc/setup/create_a_new_xcode_project.md)
 	
-  * Add Charts to the project. We suggest using Cocoapods or Carthage. [Help](doc/setup/add_charts_to_the_project.md)
+Add Charts to the project. We suggest using Carthage, or Cocoapods, or Swift Package Manager. 
 
-  * Need help with Carthage? See our repo [demo_swift_carthage](https://github.com/joelparkerhenderson/demo_swift_carthage).
+  * Carthage `Cartfile` for Swift 3 and Xcode 8:
 
-Create a view:
+    ```
+    github "danielgindi/Charts" "v3.0.3"
+    ```
+
+  * Carthage `Cartfile` for Swift 4 and Xcode 9:
+
+    ```
+    github "danielgindi/Charts" "v3.0.4"
+    ```
+
+  * Carthage command:
+
+    ```shell
+    carthage build --no-skip-current && carthage archive Charts.
+    ```
+
+  * [Help](doc/setup/add_carthage_frameworks.md)
+
+
+## Create a view
+
+Open the view:
 
   * For example, edit `Main.storyboard` → `View Controller Scene` → `View Controller` → `View`.
 
@@ -49,6 +84,7 @@ Set the class:
   * Edit the "Custom Class" area.
 
       * Class: BarChartView
+
       * Module: Charts
     
 Create an outlet:
@@ -61,8 +97,8 @@ Create an outlet:
 
   * At the top of the class, add `import Charts`
 
-The result looks like this:
-	
+Edit the code to be like this:
+
 ```swift
 import UIKit
 import Charts
@@ -73,7 +109,7 @@ class ViewController: UIViewController {
 	
   override func viewDidLoad() {
     super.viewDidLoad()
-    demoBarChartView.noDataText = "The chart has no data."
+    demoBarChartView.noDataText = "This is the chart ready for data."
   }
 	
   override func didReceiveMemoryWarning() {
@@ -83,19 +119,22 @@ class ViewController: UIViewController {
 }
 ```
  
-Verify:
+## Run
 
-  * Run the project.
+Run the project.
 
-  * You should see the text “No chart data available”.
+The Simulator screen shows the text "This is the chart ready for data."
  
-  * If you don't see the text, then look in Xcode for any error messages, and also verify that you set the custom class correctly.
-  
+If you don't see the text, then look in Xcode for any error messages, and also verify that you set the custom class correctly.
+
+Congratulations, you're successful!
+
+
 ## Tracking
 
 * Package: demo_swift_charts
-* Version: 1.0.1
+* Version: 3.0.0
 * Created: 2016-04-09
-* Updated: 2016-08-11
+* Updated: 2017-09-22
 * License: BSD, GPL, MIT
-* Contact: Joel Parker Henderson (joel@joelparkerhenderson.com)
+* Contact: Joel Parker Henderson (http://joelparkerhenderson.com)
